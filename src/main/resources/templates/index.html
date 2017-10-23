@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>View Penduduk by NIK</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+</head>
+<body>
+ <div th:replace="fragments/header"></div>
+ <br />
+ <div id="cari" style="margin-left: 80px; margin-right: 80px">
+  <h3>UTS Arsitektur dan Perancangan Aplikasi</h3>
+  <h6>Selamat datang di TOSERBA (Toko Serba Ada)</h6>
+  <hr />
+  <div class="form-group" style="margin-right:50%">
+  <h5>Lihat Detail Produk</h5>
+   <h6>Masukkan Nomor id produk</h6>
+   <form th:action="@{'/product/view'}" method="get" id="contact_form">
+    <input type="text" class="form-control" id="id_product" name="id_product"
+     placeholder="Search" required="required"/><br/>
+
+    <button type="submit" value="submit" id="submitnid_product" name="submitid_product"
+     class="btn btn-sm">Search</button>
+   </form>
+   <br/>
+   <h5>Lihat Semua Produk</h5><button type="submit" value="submit" id="submitnkk" name="submitnkk"
+     class="btn btn-sm">Lihat</button>
+   
+  <!--  <form th:action="@{'/keluarga'}" method="get" id="contact_form">
+    <input type="text" class="form-control" id="nomor_kk" name="nomor_kk"
+     placeholder="Search" required="required"/><br/>
+
+    <button type="submit" value="submit" id="submitnkk" name="submitnkk"
+     class="btn btn-sm">Search</button>
+   </form> -->
+  </div>
+ </div>
+ <div th:replace="fragments/footer"></div>
+</body>
+</html>
