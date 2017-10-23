@@ -35,7 +35,7 @@ public class ProductController {
     
     
     
-    @RequestMapping("/product/view")
+    @RequestMapping("/product/view/{id_product}")
     public String viewPath (Model model,
             @PathVariable(value = "id_product") int id_product)
     {

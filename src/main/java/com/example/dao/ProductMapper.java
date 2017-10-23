@@ -17,7 +17,7 @@ import com.example.model.ProductModel;
 public interface ProductMapper {
 	
 	//fitur2
-	@Select("select  id_product, nama, deskripsi, kategori, pabrikan, berat, harga, tahun_produksi, jumlah_stok, kondisi from product where id = #{id_product}")
+	@Select("select  id_product, nama, deskripsi, kategori, pabrikan, berat, harga, tahun_produksi, jumlah_stok, kondisi from product where product.id_product = #{id_product}")
 	@Results(value = {
     @Result(property="id_product", column="id_product"),
     @Result(property="nama", column="nama"),

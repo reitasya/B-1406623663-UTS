@@ -10,14 +10,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class ProductModel {
-	private Integer id_product;
+	private int id_product;
 	private String nama;
 	private String deskripsi;
 	private String kategori;
 	private String pabrikan;
 	private double berat;
 	private int harga;
-	private int tahunProduksi;
-	private int jumlahStok;
+	private int tahun_produksi;
+	private int jumlah_stok;
 	private String kondisi;
 }

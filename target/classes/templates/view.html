@@ -10,50 +10,50 @@
   <div class="table-responsive">
    <br />
    <center>
-    <h3> Detail Produkk </h3>
+    <h3> Detail Produk </h3>
    </center>
    <br />
    <table class="table">
     <tr>
      <td style="text-align: left; width: 50%"><b>Nama produk</b></td>
-     <td th:text="${uts.nama}">Nama produk</td>
+     <td th:text="${product.nama}">Nama produk</td>
     </tr>
     <tr>
      <td style="text-align: left"><b>Deskripsi produk</b></td>
-     <td th:text="${uts.deskripsi}">Deskripsi produk</td>
+     <td th:text="${product.deskripsi}">Deskripsi produk</td>
     </tr>
     <tr>
      <td style="text-align: left"><b>Kategori produk</b></td>
      <td
-      th:text="${uts.kategori} +', ' + ${penduduk.tanggal_lahir}">Kategori Produkr</td>
+      th:text="${product.kategori}">Kategori Produkr</td>
     </tr>
     <tr>
      <td style="text-align: left"><b>Pabrikan</b></td>
-     <td th:text="${uts.pabrikan}">Pabrikan</td>
+     <td th:text="${product.pabrikan}">Pabrikan</td>
     </tr>
     <tr>
      <td style="text-align: left"><b>Berat</b></td>
      <td
-      th:text="${uts.berat}">Berat</td>
+      th:text="${product.berat}">Berat</td>
     </tr>
     <tr>
     <td style="text-align: left"><b>Harga</b></td>
      <td
-      th:text="${uts.harga}">Harga</td>
+      th:text="${product.harga}">Harga</td>
     </tr>
     <tr>
     <td style="text-align: left"><b>Tahun produksi</b></td>
      <td
-      th:text="${uts.tahun_produksi}">Tahun produksi</td>
+      th:text="${product.tahun_produksi}">Tahun produksi</td>
     </tr>
     <tr>
     <td style="text-align: left"><b>Jumlah stok tersedia</b></td>
      <td
-      th:text="${uts.jumlah_stok}">Jumlah stok tersedia</td>
+      th:text="${product.jumlah_stok}">Jumlah stok tersedia</td>
     </tr>
     <tr>
     <td style="text-align: left"><b>Kondisi produk</b></td>
-     <td th:text="${uts.kondisi}">Kondisi</td>
+     <td th:text="${product.kondisi}">Kondisi</td>
     </tr>
     
    </table>
