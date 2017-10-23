@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>Add student</title>
+<link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+	<div th:replace="fragments/header"></div>
+	
+		<br />
+		<div id="form" style="margin-left: 80px; margin-right: 80px">
+			<div class="form-group" style="margin-right: 50%">
+				<h2 class="page-header">Add Student</h2>
+
+
+				<form action="/product/add/submit" method="get">
+					<div class="form-group">
+						<label for="nama">Nama produk</label> <input type="text"
+							name="nama" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="deskripsi">Deskripsi produk</label> <input type="text"
+							name="deskripsi" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="kategori">Kategori produk</label>  <select
+						name="kategori" id="kategori" required="required">
+						<option value="laptop">Laptop</option>
+						<option value="handphone">Handphone</option>
+					</select>
+					</div>
+					<div class="form-group">
+						<label for="pabrikan">Pabrikan produk</label> <input type="text"
+							name="pabrikan" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="berat">Berat produk</label> <input type="text"
+							name="berat" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="harga">Harga produk</label> <input type="text"
+							name="harga" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="tahun_produksi">Tahun Produksi</label> <input
+							type="text" name="tahun_produksi" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="jumlah_stok">Jumlah stok tersedia</label> <input
+							type="text" name="jumlah_stok" required="required" />
+					</div>
+					<div class="form-group">
+						<label for="kondisi">Kondisi produk</label> 
+						 <select name="kondisi" id="kondisi" required="required">
+						<option value="baru">Baru</option>
+						<option value="bekas">Bekas</option>
+					</select>
+					</div>
+
+
+
+					<div>
+						<button type="submit" name="action" value="save">Simpan</button>
+					</div>
+				</form>
+			</div>
+		</div>
+</body>
+
+	<div th:replace="fragments/footer"></div>
+</html>
+

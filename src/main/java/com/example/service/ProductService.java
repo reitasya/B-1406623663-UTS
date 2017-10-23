@@ -9,7 +9,10 @@ public interface ProductService {
 
 	
 	ProductModel selectProduct(int id_product);
+	
 	List<ProductModel> selectAllProducts ();
+	
+	 void addProduct (ProductModel product);
 	
 
 }

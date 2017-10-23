@@ -31,6 +31,12 @@ public class ProductServiceDatabase implements ProductService {
         log.info ("select all products");
         return productMapper.selectAllProduct ();
     }
+    
+    @Override
+    public void addProduct (ProductModel product)
+    {
+        productMapper.addProduct (product);
+    }
 
 	
 }
